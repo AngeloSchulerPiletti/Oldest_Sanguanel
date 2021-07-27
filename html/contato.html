@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Está é a área do site de contato com o cliente, parceiros e todos aqueles que desejam contatar a empresa">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="creator" content="Angelo Schuler Piletti">
+    <meta name="keywords" content="Hidromel, Sanguanel, Contato, Email">
+    <meta name="robots" content="follow">
+    <meta name="rating" content="general">
+    <link rel="icon" href="../assets/images/IconSite.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/geralstyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/contato.css">    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+    <title>Contato|Sanguanel Hidromel</title>
+</head>
+
+<body>
+    <!-- <div id="waiting_page">
+      <div id="waiting_container">
+        <img id="waiting_logo" src="../assets/images/Logo Sanguanel.png">
+        <h6>Carregando...</h6>
+      </div>
+    </div>
+    <script src="../js/pageload.js"></script> -->
+
+    <nav id="navegation">
+      
+    </nav>
+    <div id="mobile_selector_screen" data-menu="showit"></div>
+
+    <main>
+      <section id="title_background">
+        <h2>FALE CONOSCO</h2>
+      </section>
+
+    </main>
+    <section id="message">
+      <div id="title_div">
+        <img src="../assets/images/contatoIcons/messages.png">
+        <h6><specialh6>Ficaremos contentes em</specialh6><br>responder você</h6>
+      </div>
+      <span>Mensagem Enviada!</span>
+      <form method="POST" action="../php/contato.php">
+        <div id="A"><input type="text" name="name" placeholder="Nome" id="A1"><input type="email" name="email" placeholder="E-Mail" id="A2"></div>
+        <input type="text" name="subject" placeholder="Assunto" id="B">
+        <textarea name="message" placeholder="Mensagem" id="C"></textarea>
+        
+        <input type="submit" value="enviar" id="D" autocomplete="off">
+        
+      </form>
+      
+    </section>
+
+    <footer id="footerer">
+      
+    </footer>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4CZG8W26P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F4CZG8W26P');
+  </script>
+
+</body>
+<script src="../js/geralscript.js"></script>
+<script src="../js/contato.js"></script>
+</html>

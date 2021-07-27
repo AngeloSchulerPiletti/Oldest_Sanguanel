@@ -1,0 +1,429 @@
+@keyframes showing{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+main{
+    background-color: #050505;
+}
+
+#product_photo{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20vw;
+    opacity: 0;
+
+    animation: showing 1000ms linear 1000ms 1 normal forwards;
+    
+}
+
+#backProduct{
+    height: 35vw;
+
+}
+#title_photo{
+    font-family: M_S;
+    font-size: 2.8vw;
+    color: #9b8719;
+    margin-top: 3vw;
+}
+#subtitle_photo{
+    font-family: RI_S;
+    font-size: 1.8vw;
+    color: #cacaca;
+    margin-top: 0.4vw;
+}
+#product_photo hr{
+    background-color: #cacaca;
+    color: #cacaca;
+    width: 9vw;
+    margin: auto;
+    outline: none;
+    border: none;
+    height: 1px;
+    margin-top: 0.3vw;
+    /* padding-bottom: 4vw; */
+}
+
+
+
+#AboutMead{
+    color: white;
+    display: flex;
+    padding-bottom: 20vw;
+}
+#MeadArticle{
+    flex-grow: 1;
+    width: 45vw;
+    margin-left: 3vw;
+    vertical-align: top;
+    margin-right: 10vw;
+}
+#MeadArticle p, ul{
+    font-family: R_SS;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+#MeadArticle p{
+    margin-bottom: 1vw;
+
+}
+#MeadArticle li{
+    font-family: RI_S;
+    font-size: 1.2vw;
+    list-style: none;
+    color: #9b8719;
+    margin-top: 0.4vw;
+    margin-left: 2vw;
+}
+
+
+
+
+#rating{
+    flex-grow: 0;
+    width: 40vw;
+    vertical-align: top;
+    background-color: #9b8719;
+    color: #050505;
+    padding-top: 0.5vw;
+    padding-bottom: 1.5vw;
+    border-radius: 2vw 0 0 2vw;
+}
+.rating_div{
+    margin-left: 1.8vw;
+    margin-top: 1vw;
+    
+
+}
+.rating_div p{
+    display: inline-block;
+    font-family: SB_SS;
+    font-size: 1.6vw;
+    
+}
+.rating_div img{
+    width: 8vw;
+    display: inline-block;
+    margin-right: 1.4vw;
+    
+}
+
+
+
+
+
+#TeachingHowTo{
+    padding-bottom: 12vw;
+}
+#TeachingHowTo h3{
+    color: white;
+    font-family: SB_SS;
+    font-size: 2.2vw;
+}
+#TeachingHowTo span{
+    color: #9b8719;
+    font-family: R_SS;
+    font-size: 1.4vw;
+    
+}
+.containerAll{
+    display: flex;
+    margin-left: 3vw;
+}
+
+
+
+
+#MadeTo{
+    margin-bottom: 8vw;
+    
+}
+
+.TeachingContainer{
+    flex-grow: 1;
+
+}
+.TeachingContainer p{
+    width: 35vw;
+    font-family: R_SS;
+    font-size: 1.2vw;
+    color: white;
+    text-align: justify;
+    margin-top: 1vw;
+    text-indent: 1em;
+}
+#MadeToDiv{
+    flex-grow: 0;
+    width: 50vw;
+}
+#HowToDiv{
+    flex-grow: 0;
+    width: 50vw;
+}
+
+
+
+
+
+
+.IconContainer{
+    display: inline-block;
+    text-align: center;
+    margin-right: 8vw;
+}
+.iconP{
+    width: 6vw;
+    display: block;
+    margin-top: 1vw;
+}
+
+
+
+
+#_advice_{
+    text-align: center;
+    padding-bottom: 8vw;
+}
+#_advice_ h6{
+    font-family: SB_SS;
+    font-size: 1.8vw;
+    width: 60vw;
+    margin: auto;
+    color: white;
+}
+#_advice_ a{
+    color: #A0A0A0;
+    text-decoration: none;
+
+    transition: 500ms;
+}
+#_advice_ a:hover{
+    color: #9b8719;
+}
+
+
+
+
+/* ANIMAÇÃO */
+[data-anime]{
+    opacity: 0;
+    transition: 1000ms;
+}
+
+[data-anime="fromright"]{
+    transform: translate(10vw, 0);
+}
+
+[data-anime="growth"]{
+    transform: translate(0, 5vw);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 500px){
+    #product_photo{
+        /* width: 100%; */
+        /* text-align: center; */
+        /* padding-bottom: 20vw; */
+        /* opacity: 0; */
+    
+        /* animation: showing 1000ms linear 1000ms 1 normal forwards; */
+    }
+    #backProduct{
+        height: 90vw;
+    
+    }
+    #title_photo{
+        /* font-family: M_S; */
+        font-size: 6.5vw;
+        /* color: #9b8719; */
+        margin-top: 0;
+        transform: translate(0, -5vw);
+    }
+    #subtitle_photo{
+        /* font-family: RI_S; */
+        font-size: 4.5vw;
+        color: #cacaca;
+        margin-top: 1.2vw;
+        transform: translate(0, -5vw);
+    }
+    #product_photo hr{
+        transform: translate(0, -5vw);
+        /* background-color: #cacaca; */
+        /* color: #cacaca; */
+        width: 22vw;
+        /* margin: auto; */
+        /* outline: none; */
+        /* border: none; */
+        /* height: 1px; */
+        /* margin-top: 0.3vw; */
+        /* padding-bottom: 4vw; */
+    }
+
+
+
+    #AboutMead{
+        /* color: white; */
+        display: block;
+        /* padding-bottom: 20vw; */
+    }
+    #MeadArticle{
+        /* flex-grow: 1; */
+        width: 85vw;
+        margin-left: 0;
+        /* vertical-align: top; */
+        margin-right: 0;
+        margin: auto;
+        margin-bottom: 12vw;
+    }
+    #MeadArticle p, ul{
+        /* font-family: R_SS; */
+        font-size: 3.6vw;
+        /* text-align: justify; */
+    }
+    #MeadArticle p{
+        margin-bottom: 1.8vw;
+    
+    }
+    #MeadArticle li{
+        font-family: BI_S;
+        word-spacing: 0.6vw;
+        letter-spacing: 0.15vw;
+        font-size: 3.8vw;
+        /* list-style: none; */
+        /* color: #9b8719; */
+        margin-top: 0.6vw;
+        margin-left: 5vw;
+    }
+
+
+
+
+
+
+    #rating{
+        /* flex-grow: 0; */
+        width: 60vw;
+        margin-left: auto;
+        /* vertical-align: top; */
+        /* background-color: #9b8719; */
+        /* color: #050505; */
+        /* padding-top: 0.5vw; */
+        padding-bottom: 3vw;
+        border-radius: 4vw 0 0 4vw;
+    }
+    .rating_div{
+        margin-left: 3vw;
+        margin-top: 2vw;
+        
+    
+    }
+    .rating_div p{
+        /* display: inline-block; */
+        /* font-family: SB_SS; */
+        font-size: 3.5vw;
+        
+    }
+    .rating_div img{
+        width: 14vw;
+        /* display: inline-block; */
+        margin-right: 3vw;
+        
+    }
+
+
+
+
+
+
+    #TeachingHowTo{
+        padding-bottom: 20vw;
+    }
+    #TeachingHowTo h3{
+        /* color: white; */
+        font-family: M_S;
+        text-transform: uppercase;
+        font-size: 5vw;
+        letter-spacing: 0.15vw;
+        word-spacing: 0.5vw;
+    }
+    #TeachingHowTo span{
+        /* color: #9b8719; */
+        /* font-family: R_SS; */
+        font-size: 3.4vw;
+        
+    }
+    .containerAll{
+        display: block;
+        margin-left: 7.5vw;
+    }
+    #MadeTo{
+        margin-bottom: 20vw;
+        
+    }
+    .TeachingContainer{
+        /* flex-grow: 1; */
+    
+    }
+    .TeachingContainer p{
+        width: 85vw;
+        /* font-family: R_SS; */
+        font-size: 3.6vw;
+        /* color: white; */
+        /* text-align: justify; */
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+        /* text-indent: 1em; */
+    }
+    #MadeToDiv{
+        /* flex-grow: 0; */
+        width: 85vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    #HowToDiv{
+        /* flex-grow: 0; */
+        width: 85vw;
+        display: flex;
+        justify-content: space-between;
+    }
+        
+    .IconContainer{
+        display: inline-block;
+        text-align: center;
+        margin-right: 0;
+    }
+    .iconP{
+        width: 14vw;
+        display: block;
+        margin-top: 1vw;
+    }
+    
+
+
+
+
+    #_advice_{
+        /* text-align: center; */
+        padding-bottom: 14vw;
+    }
+    #_advice_ h6{
+        /* font-family: SB_SS; */
+        font-size: 2.8vw;
+        width: 80vw;
+        /* margin: auto; */
+        /* color: white; */
+    }
+}

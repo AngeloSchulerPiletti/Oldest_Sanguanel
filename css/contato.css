@@ -1,0 +1,241 @@
+@keyframes changeBack{
+    from {background-repeat: no-repeat; background: url(../assets/images/contatoIcons/mail-send.png); background-size: cover;}
+    to {background-repeat: no-repeat; background: url(../assets/images/contatoIcons/mail-send1.png); background-size: cover;}
+}
+
+
+
+
+
+#title_background{
+    background-image: url(../assets/images/pictures/bees-2448596_1920.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 20%;
+    overflow: hidden;
+
+    text-align: center;
+    height: 20vw;
+}
+#title_background h2{
+    margin-top: 10vw;
+    transform: translate(0, -50%);
+    color: white;
+    font-family: M_S;
+    font-size: 2.8vw;
+    word-spacing: 1vw;
+    letter-spacing: 0.3vw;
+}
+
+
+#title_div{
+    margin-bottom: 4vw;
+}
+#title_div img{
+    width: 4vw;
+    margin-left: 4vw;
+    margin-top: 4vw;
+    margin-right: 2vw;
+}
+#title_div specialh6{
+    font-size: 1.5vw;
+}
+#title_div h6{
+    display: inline-block;
+    font-family: M_S;
+    font-size: 2.3vw;
+    text-transform: uppercase;
+    color: white;
+    line-height: 2.4vw;
+}
+
+
+
+
+#message span{
+    margin-left: 10vw;
+    opacity: 0;
+    display: none;
+    color: rgb(0, 255, 0);
+    font-family: R_SS;
+    font-size: 1.2vw;
+}
+
+form{
+    margin-left: 0vw;
+    width: 50vw;
+    margin-bottom: 20vw;
+    margin-left: 5vw;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+}
+input{
+    font-family: R_SS;
+    
+}
+input:focus, textarea:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    border: none;
+}
+input::placeholder, textarea::placeholder{
+    font-size: 2vw;
+}
+input, textarea{
+    border-radius: .5vw;
+    box-shadow: 0 0 0 0;
+    border: none;
+    font-size: 3.6vw;
+}
+#A{
+    display: flex;
+    margin-bottom: 1vw;
+    justify-content: space-between;
+    
+
+}
+#A1{
+    height: 5vw;
+    padding-left: 2vw;
+    width: 45%;
+}
+#A2{
+    height: 5vw;
+    padding-left: 2vw;
+    width: 45%;
+}
+#B{
+    height: 5vw;
+    padding-left: 2vw;
+    margin-bottom: 1vw;
+    
+}
+#C{
+    height: 10vw;
+    resize: none;
+    font-family: R_SS;
+    padding-left: 2vw;
+    padding-top: 0.6vw;
+}
+#D{
+    width: 5vw;
+    height: 5vw;
+    margin-right: auto;
+    margin-top: 2vw;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    background-image: url(../assets/images/contatoIcons/mail-send.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+#D:hover{
+    animation: changeBack 500ms ease-out;
+    animation-fill-mode: forwards;
+    
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 500px){
+    #title_background{
+        background-attachment: local;
+        background-position-y: 50%;    
+        text-align: center;
+        height: 30vw;
+    }
+    #title_background h2{
+        margin-top: 15vw;
+        font-family: M_S;
+        font-size: 7vw;
+        word-spacing: 1.4vw;
+        letter-spacing: 0.5vw;
+    }
+
+
+
+
+
+    #title_div{
+        margin-bottom: 7.5vw;
+    }
+    #title_div img{
+        width: 12vw;
+        margin-left: 8vw;
+        margin-top: 8vw;
+        margin-right: 4vw;
+    }
+    #title_div specialh6{
+        font-size: 4vw;
+    }
+    #title_div h6{
+        font-size: 7vw;
+        line-height: 5.6vw;
+    }
+
+
+
+
+
+
+
+    #message span{
+        font-size: 4vw;
+    }
+    
+    form{
+        width: 85vw;
+        margin-top: 0vw;
+        margin: auto;
+    
+    }
+    
+    input::placeholder, textarea::placeholder{
+        font-size: 3.6vw;
+    }
+    #A{
+        display: flex;
+        margin-bottom: 1vw;
+    }
+    #A1{
+        margin-right: 0;
+        height: 7vw;
+        width: 47%;
+    }
+    #A2{
+        height: 7vw;
+        width: 47%;
+    }
+    #B{
+        margin-top: 0;
+        height: 7vw;
+        margin-right: 0;
+        margin-bottom: 1vw;
+        
+    }
+    #C{
+        height: 14vw;
+        margin-top: 0;
+        font-family: R_SS;
+    }
+    #D{
+        width: 12vw;
+        height: 12vw;
+        margin-top: 2vw;
+    
+    }
+    
+}

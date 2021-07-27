@@ -1,0 +1,228 @@
+:root{
+    --articlecolor:#ac961c;
+}
+
+
+#title_background{
+    background-image: url(../assets/images/pictures/vaulted-cellar-247391_1920.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    overflow: hidden;
+
+    text-align: center;
+    height: 20vw;
+}
+#title_background h2{
+    margin-top: 10vw;
+    transform: translate(0, -50%);
+    color: white;
+    font-family: M_S;
+    font-size: 2.8vw;
+    word-spacing: 1vw;
+    letter-spacing: 0.3vw;
+}
+
+
+
+#objectives{
+    display: flex;
+    align-items: center;
+    padding-top: 8vw;
+    padding-bottom: 16vw;
+}
+#objectives article{
+    flex-grow: 1;
+    color: white;
+    font-family: R_SS;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+#objectives img{
+    flex-grow: 0;
+    width: 40vw;
+    border-radius: 4vw 0 0 4vw;
+}
+
+
+
+
+#sanguanel_lenda{
+    color: var(--articlecolor);
+    padding-left: 3vw;
+    padding-bottom: 10vw;
+}
+#A{
+    margin-bottom: 5vw;
+}
+#A h2{
+    font-family: M_S;
+    color: white;
+    font-size: 6vw;
+    display: inline-block;
+    line-height: 4vw;
+    margin-left: 2vw;
+}
+#A specialh2{
+    font-size: 2.2vw;
+    word-spacing: 1vw;
+    letter-spacing: 0.2vw;
+}
+#A img{
+    margin-top: 4vw;
+    width: 7.5vw;
+}
+
+#B{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: flex-start;
+    
+}
+#B p{
+    font-family: RI_S;
+    font-size: 1.8vw;
+    width: 50vw;
+    text-align: justify;
+    
+}
+#B img{
+    width: 20vw;
+    margin-left: 15vw;
+}
+
+
+
+
+
+
+/* ANIMAÇÃO */
+[data-anime]{
+    opacity: 0;
+    transition: 1000ms;
+}
+
+[data-anime="fromleft"]{
+    transform: translate(-4vw, 0);
+}
+[data-anime="fromright"]{
+    transform: translate(4vw, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 500px){
+    #title_background{
+        /* background-image: url(../assets/images/pictures/vaulted-cellar-247391_1920.jpg); */
+        background-attachment: local;
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        background-position-y: 50%;
+        /* overflow: hidden; */
+    
+        text-align: center;
+        height: 30vw;
+    }
+    #title_background h2{
+        margin-top: 15vw;
+        /* transform: translate(0, -50%); */
+        /* color: white; */
+        font-family: M_S;
+        font-size: 7vw;
+        word-spacing: 1.4vw;
+        letter-spacing: 0.5vw;
+    }
+
+
+
+    #objectives{
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-end;
+        align-items: none;
+        padding-top: 5vw;
+        /* padding-bottom: 16vw; */
+    }
+    #objectives article{
+        /* flex-grow: 1; */
+        /* color: #ac961c; */
+        /* font-family: R_SS; */
+        display: block;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding-bottom: 5vw;
+        text-indent: 1.3em;
+        font-size: 4vw;
+        /* text-align: justify; */
+    }
+    #objectives img{
+        /* flex-grow: 0; */
+        width: 70vw;
+        border-radius: 3vw 0 0 3vw;
+        
+    }
+
+
+
+
+
+
+
+    #sanguanel_lenda{
+        /* color: var(--articlecolor); */
+        padding-left: 5vw;
+        padding-bottom: 25vw;
+    }
+    
+    #A h2{
+        /* font-family: M_S; */
+        /* color: white; */
+        font-size: 11vw;
+        /* display: inline-block; */
+        line-height: 8vw;
+        /* margin-left: 2vw; */
+    }
+    #A specialh2{
+        font-size: 5.5vw;
+        word-spacing: 1.4vw;
+        letter-spacing: 0.5vw;
+    }
+    #A img{
+        margin-top: 4vw;
+        width: 15vw;
+    }
+    
+    #B{
+        display: block;
+        /* grid-template-columns: auto auto; */
+        /* grid-template-rows: auto; */
+        /* justify-content: flex-start; */
+        
+    }
+    #B p{
+        font-family: BI_S;
+        font-size: 4vw;
+        width: 85vw;
+        /* text-align: justify; */
+        
+    }
+    #B img{
+        display: none;
+        /* width: 20vw; */
+        /* margin-left: 15vw; */
+    }
+}
